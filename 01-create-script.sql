@@ -3,7 +3,7 @@
  -- 03-query-readonly.sql
 
 -- Create keyspace (press TAB for autocomplete in cqlsh)
-CREATE KEYSPACE homework
+CREATE KEYSPACE homework WITH replication = {'class': 'SimpleStrategy', 'replication_factor': '1'};
 
 -- Use keyspace
 USE homework;
